@@ -1,3 +1,4 @@
+import 'package:copia_instagram/singup_screen.dart';
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 void main() => runApp(MyApp());
@@ -22,6 +23,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:LoginScreen(),
+      routes: {
+        LoginScreen.id: (context) => LoginScreen(),
+        SignupScreen.id: (context) => SignupScreen(),
+      },
     );
   }
 }
